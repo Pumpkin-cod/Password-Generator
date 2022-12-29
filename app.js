@@ -19,15 +19,17 @@ function getRandomCharacter() {
 }
 //Generate password function
 passwordEl.addEventListener("click", function(){
-    let randomPassword = ""
+    let randomPassword = getRandomCharacter()
     for (let i = 0; i < passwordLength; i++) {
-       passwordEl.textContent += getRandomCharacter()         
+    //    passwordEl.textContent += getRandomCharacter()
+       outputEl1.value += randomPassword
+       outputEl2.value += randomPassword         
     }
 })
 
 //Password reset function
 resetEl.addEventListener("click", function(){
     let reset = ""
-    outputEl1.textContent = reset
-    outputEl2.textContent = reset
+    outputEl1.value = reset
+    outputEl2.value = reset
 })
