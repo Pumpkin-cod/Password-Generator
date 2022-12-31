@@ -4,6 +4,7 @@ var passwordEl = document.querySelector("#password-el")
 var outputEl1 = document.querySelector("#passwordOutputOne-el")
 var outputEl2 = document.querySelector("#passwordOutputTwo-el")
 var resetEl = document.querySelector("#reset-el")
+const eyeEl = document.querySelector("#eye")
 let passwordLength = 15
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M",
  "N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e",
@@ -19,7 +20,7 @@ function getRandomCharacter() {
 }
 //Generate password function
 passwordEl.addEventListener("click", function(){
-    let randomPassword = getRandomCharacter()
+    let randomPassword = " "
     for (let i = 0; i < passwordLength; i++) {
     //    passwordEl.textContent += getRandomCharacter()
        outputEl1.value += randomPassword
@@ -29,7 +30,25 @@ passwordEl.addEventListener("click", function(){
 
 //Password reset function
 resetEl.addEventListener("click", function(){
-    let reset = ""
+    let reset = " "
     outputEl1.value = reset
     outputEl2.value = reset
 })
+
+// working on the first input field
+eyeEl.addEventListener("click", function () {
+    // toggling the type attribute
+    const type = outputEl1.getAttribute("type") === "password" ? "text" : "password"
+    outputEl1.setAttribute("type", type);
+    // toggle the icon
+    this.classList.toggle("fa-eye-slash");
+});
+
+// working on the second input field
+eyeEl.addEventListener("click", function () {
+    // toggling the type attribute
+    const type = outputEl2.getAttribute("type") === "password" ? "text" : "password"
+    outputEl2.setAttribute("type", type);
+    // toggling the icon
+    this.classList.toggle("fa-eye-slash");
+});
