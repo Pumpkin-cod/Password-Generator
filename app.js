@@ -5,7 +5,7 @@ var outputEl1 = document.querySelector("#passwordOutputOne-el")
 var outputEl2 = document.querySelector("#passwordOutputTwo-el")
 var resetEl = document.querySelector("#reset-el")
 const eyeEl = document.querySelector("#eye")
-let passwordLength = 15
+let passwordLength = 15;
 const characters = ["A","B","C","D","E","F","G","H","I","J","K","L","M",
  "N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e",
  "f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w",

@@ -62,7 +62,7 @@ input[type=button]{
     font-size: 0.8rem;
 }
 
-input[type=password]{
+input[type=text]{
     padding: 1rem 1.2rem;
     width: 100%;
     margin: 0.9rem 0;
