@@ -13,20 +13,28 @@
     <title>Password Generator</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Generate a <br><span>random password</span></h1>
-        <p>Never use an insecure password again</p>
-        <button id="password-el" onclick="">Generate Password</button>
-        <button id="reset-el" onclick="">Reset Password</button>
-        <hr>
-        <input type="password" name="leftText" class="leftText" id="passwordOutputOne-el">
-        <span class="show-btn">
-             <i class="fa fa-eye" id="eye" aria-hidden="true"></i>
-        </span>
-        <input type="password" name="rightText" class="rightText" id="passwordOutputTwo-el">
-        <span class="show-btn">
-            <i class="fa fa-eye" id="eye" aria-hidden="true"></i>
-       </span>
+    <div class="box">
+        <div class="row">
+            <h1>Generate a <span>random password</span> </h1>   
+        </div>
+        <div class="row">
+            <p>Never use an insecure password again</p>  
+        </div>
+        <div class="row">
+            <input id="password-el" onclick="" type="button" value="Generate Password"> 
+            <input id="reset-el" onclick="" type="button" value="Reset Password"> 
+        </div>
+        <div class="row">
+            <div class="bar"></div>
+        </div>
+        <div class="row">
+            <input type="password" id="passwordOutputOne-el"> 
+            <i class="fa fa-eye-slash" id="eye" aria-hidden="true"></i>
+        </div>
+        <div class="row">
+            <input type="password" id="passwordOutputTwo-el"> 
+            <i class="fa fa-eye-slash" id="eye" aria-hidden="true"></i> 
+        </div>
     </div>
     <script src="app.js"></script>
 </body>

@@ -22,7 +22,6 @@ function getRandomCharacter() {
 passwordEl.addEventListener("click", function(){
     let randomPassword = " "
     for (let i = 0; i < passwordLength; i++) {
-    //    passwordEl.textContent += getRandomCharacter()
        outputEl1.value += randomPassword
        outputEl2.value += randomPassword         
     }
