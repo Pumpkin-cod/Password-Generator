@@ -92,6 +92,15 @@ input[type=text]{
     border: none;  
 }
 
+input[type=password] {
+    padding: 1rem 1.2rem;
+    width: 100%;
+    margin: 0.9rem 0;
+    text-align: center;
+    color: #10B981;
+    font-size: 1.2rem;
+    border: none;
+}
 .bar{
     width: 100%;
     height: 5px;
@@ -104,6 +113,16 @@ input[type=text]{
     position: absolute;
     color: green;
     right: 10rem;
+}
+
+.row #eye {
+    position: absolute;
+    color: green;
+    right: 28rem;
+}
+
+.eyeToggle {
+    display: none;
 }
 
 /* media queries */

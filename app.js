@@ -27,6 +27,19 @@ document.getElementById("reset-el").addEventListener("click", function(){
 var copyBtn = document.getElementById("copy")
 var copied = document.querySelector(".success")
 
-outputOne.addEventListener("focus", () => outputOne.ariaSelected())
+copyBtn.addEventListener('click', () => {
+    console.log (outputOne.value)
+    window.navigator.clipboard.writeText(outputOne.value)
+})
 
 
+// toggling eye function
+let eyeId = document.getElementById("eye")
+
+eyeId.addEventListener('click', () => {
+    if (outputTwo.type === 'text'){
+        outputTwo.type = 'password'
+    }else{
+        outputTwo.type = 'text'
+    }
+})
