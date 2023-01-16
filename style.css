@@ -126,7 +126,7 @@ input[type=password] {
 }
 
 /* media queries */
-@media only screen and (max-width: 414px){
+@media only screen and (max-width: 769px){
     .row{
         display: flex;
         flex-direction: column;
@@ -151,13 +151,20 @@ input[type=password] {
         bottom: 50px;
     }
 
+    .row #eye{
+        position: relative;
+        left: 170px;
+        top: -45px;
+    }
+
     input[type=button]{
         display: block;
         width: 100%;
+        
     }
 }
 
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 770px){
 
     .box{
           width: 80%;
@@ -174,7 +181,7 @@ input[type=password] {
     }
 }
 
-@media only screen and (min-width: 1024px){
+/* @media only screen and (min-width: 1024px){
 .row #copy{
     position: absolute;
     right: 20rem;
@@ -190,4 +197,4 @@ input[type=password] {
 input[type=button]{
     width: 40%;
 }
-}
+} */
